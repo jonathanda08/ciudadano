@@ -17,14 +17,14 @@ public class ciudadano {
     private long id;
 
     @Column(name = "CiuGenero")
-    private String genero;
+    private String Genero;
 
     @Column(name = "CiuNombre")
-    private String nombre;
+    private String Nombre;
 
     @Column(name = "CiuApellido")
-    private String apellido;
+    private String Apellido;
 
     @Column(name = "CiuRaza")
-    private String raza;
+    private String Raza;
 }

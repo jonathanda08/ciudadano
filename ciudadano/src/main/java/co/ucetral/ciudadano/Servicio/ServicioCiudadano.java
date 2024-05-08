@@ -27,8 +27,27 @@ public class ServicioCiudadano implements OperacionesCiudadano {
     }
 
     @Override
-    public void ingresar(CiudadanoDto ciudadano) {
-        ciudadano ciudadanos = modelMapper.map(ciudadano,ciudadano.class);
-        repoCiudadano.save(ciudadanos);
+    public ciudadano crear(ciudadano ciudadano) {
+        return null;
+    }
+
+    @Override
+    public ciudadano actualizar(ciudadano ciudadano) {
+        return null;
+    }
+
+    @Override
+    public List<ciudadano> consultarT() {
+        return List.of();
+    }
+
+    @Override
+    public void borrar(ciudadano ciudadano) {
+
+    }
+
+    @Override
+    public ciudadano consultarPK(int pk) {
+        return null;
     }
 }

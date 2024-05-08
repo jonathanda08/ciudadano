@@ -10,14 +10,15 @@
     <div class="col-6">
         <form th:action="@{/ciudadano/nuevo}" method="post" th:object="${ciudadano}">
 
+
             <div class="mb-3">
-                <label for="id_ciudadano" class="form-label">ID</label>
-                <input th:field="*{Id}" type="number" class="form-control" id="id_ciudadano" aria-describedby="emailHelp">
+                <label for="CiuId" class="form-label">Id</label>
+                <input th:field="*{Id}" type="number" class="form-control" id="CiuId" aria-describedby="emailHelp">
             </div>
 
             <div class="mb-3">
                 <label  for="genero" class="form-label">Género</label>
-                <input th:field="*{Renero}" type="text" class="form-control" id="genero" aria-describedby="emailHelp">
+                <input th:field="*{Genero}" type="text" class="form-control" id="genero" aria-describedby="emailHelp">
             </div>
 
             <div class="mb-3">
@@ -36,6 +37,12 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar" onclick="window.location.href = 'http://localhost:63342/ciudadano/ciudadano/src/main/resources/templates/crear.html?_ijt=b9u5408iqosm3ivmd2gfi93p3&_ij_reload=RELOAD_ON_SAVE'" >
+            </button>
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='http://localhost:63342/ciudadano/ciudadano/src/main/resources/templates/listar.html?_ijt=lhhhfg70565rpu5sp4hm40nqta&_ij_reload=RELOAD_ON_SAVE'">Volver a la lista</button>
+
         </form>
     </div>
 </div>
